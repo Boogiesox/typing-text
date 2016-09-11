@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Typist Test Page</title>
+        <link rel="stylesheet" href="typist.css"></link>
+    </head>
+    
+    <body>
+        <div class="typist-container">
+            <h1 class="typist">1 This is a test message</h1>
+            <h1 class="typist">2 This is a test message</h1>
+            <h1 class="typist">3 This is a test message</h1>
+            <h1 class="typist">4 This is a test message</h1>
+        </div>
+    </body>
+    
+    <script src="typist.js"></script>
+    <script>
+        // Instantiate a new typist.js control
+        new Typist({
+            "element": ".typist",
+            "delay": 1000,
+            "display": "inline",
+            "callback": function() {
+                alert("This is a completed callback test");
+            }
+        });
+    </script>
+</html>
+
+
+
